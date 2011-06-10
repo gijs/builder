@@ -25,7 +25,7 @@ array_flatten = (array) ->
   flattened
 
 Builder = (tag_name) ->
-  document = if Builder.document? then Builder.document else document
+  document = if Builder.document? then Builder.document else window.document
   elements = []
   attributes = {}
   for argument in array_from(arguments)[1..]
@@ -150,4 +150,4 @@ else
   @Builder = Builder
 
 if @ender?
-  @ender.ender builder: Builder
+  @ender builder: Builder

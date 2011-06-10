@@ -1,7 +1,7 @@
 {
   "name": "builder",
   "description": "Liberal JavaScript DOM builder",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Ryan Eastridge <ryan@syntacticx.com>",
   "licenses": [{
     "type": "MIT",

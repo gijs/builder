@@ -37,7 +37,7 @@
   };
   Builder = function(tag_name) {
     var argument, attribute_name, attributes, document, element, elements, name, tag, test_element, value, _element, _i, _j, _len, _len2, _ref;
-    document = Builder.document != null ? Builder.document : document;
+    document = Builder.document != null ? Builder.document : window.document;
     elements = [];
     attributes = {};
     _ref = array_from(arguments).slice(1);
@@ -188,7 +188,7 @@
     this.Builder = Builder;
   }
   if (this.ender != null) {
-    this.ender.ender({
+    this.ender({
       builder: Builder
     });
   }
