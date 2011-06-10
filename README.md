@@ -2,21 +2,25 @@ Builder
 =======
 Liberal JavaScript DOM builder 
 
-Builder(tag_name, attributes = {}, elements = [], content = '', callback) 
+    npm install builder
+
+Builder(tag_name, attributes = {}, elements = [], content = '', callback)
 -------
-Generate a DOM Element. Accepts a variable number of arguments which may be:
+Accepts a variable number of arguments which may be:
 
 - Hashes of attributes
 - Elements
 - Strings of content
 - Arrays (which can be nested) of any of the above
-- Function to call, which should return any of the above
-
-    div = Builder 'div', className: 'tasty' 
-    ul = Builder.ul Builder.li 'Item One'
+- Function to call, which can return any of the above
 
 All HTML5 tag names are available as functions on the Builder object which will generate the corresponding element. For maximum readability when generating multiple elements it can be useful to a function with Builder as the context:
 
+    # using Builder
+    div = Builder 'div', className: 'tasty'
+    ul = Builder.ul Builder.li 'Item One'
+    
+    # calling a function with Builder as the context
     table = (->
       @table cellpadding: 0, cellspacing: 0,
         @tbody(
