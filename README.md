@@ -4,7 +4,7 @@ Liberal JavaScript DOM builder
 
     npm install builder
 
-Builder(tag_name, attributes = {}, elements = [], content = '', callback)
+element = Builder(tag_name, attributes = {}, elements = [], content = '', callback)
 -------
 Accepts a variable number of arguments which may be:
 
@@ -14,7 +14,7 @@ Accepts a variable number of arguments which may be:
 - Arrays (which can be nested) of any of the above
 - Function to call, which can return any of the above
 
-All HTML5 tag names are available as functions on the Builder object which will generate the corresponding element. For maximum readability when generating multiple elements it can be useful to a function with Builder as the context:
+All HTML5 tag names are available as functions on the Builder object which will generate the corresponding element. For maximum readability when generating multiple elements it can be useful to a function with Builder as the context.
 
     # using Builder
     div = Builder 'div', className: 'tasty'
