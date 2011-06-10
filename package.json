@@ -2,7 +2,7 @@
   "name": "builder",
   "description": "Liberal JavaScript DOM builder",
   "version": "1.0.1",
-  "url": "http://syntacticx.github.com/builder/",
+  "url": "https://github.com/syntacticx/builder/",
   "author": "Ryan Eastridge <ryan@syntacticx.com>",
   "licenses": [{
     "type": "MIT",
