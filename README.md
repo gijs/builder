@@ -49,7 +49,16 @@ Setting $ on Builder will make Builder return a wrapped object containing the el
     list = (->
       @ul @li @a('Link',href:'#').click ->
     ).call Builder
-    
+
+Backbone
+--------
+To use in a [Backbone](http://documentcloud.github.com/backbone/) project, include builder.js then:
+
+    BuilderView = Backbone.View.extend Builder
+    MyView = BuilderView.extend
+      render: ->
+        @el.appendChild @ul li 'Item One'
+        
 Ender
 -----
 When including builder in an Ender build, it becomes available as $.builder:
